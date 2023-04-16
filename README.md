@@ -11,3 +11,10 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
+
+
+## Deploying
+
+```shell
+npx hardhat --network bsc-testnet deploy --tags OFTToken
+```
