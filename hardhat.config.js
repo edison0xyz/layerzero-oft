@@ -8,7 +8,7 @@ require("hardhat-gas-reporter");
 require("hardhat-deploy");
 require("hardhat-deploy-ethers");
 require("@openzeppelin/hardhat-upgrades");
-// require("./tasks");
+require("./tasks");
 
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   const accounts = await hre.ethers.getSigners();
@@ -46,9 +46,7 @@ function accounts(chainKey) {
  */
 module.exports = {
   etherscan: {
-    apiKey: {
-      polygonMumbai: process.env.POLYGONSCAN_API,
-    },
+    apiKey: process.env.POLYGONSCAN_API,
   },
   customChains: [
     {
@@ -166,7 +164,7 @@ module.exports = {
       accounts: accounts(),
     },
     mumbai: {
-      url: "https://rpc-mumbai.maticvigil.com/",
+      url: "https://matic-mumbai.chainstacklabs.com/",
       chainId: 80001,
       accounts: accounts(),
     },
