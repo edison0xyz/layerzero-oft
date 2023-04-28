@@ -63,6 +63,7 @@ module.exports = async function (taskArgs, hre) {
       ) {
         console.log("*source already set*");
       } else {
+        console.log(e.error.message);
         console.log(
           `❌ [${hre.network.name}] setTrustedRemote(${remoteChainId}, ${remoteAndLocal})`
         );

@@ -123,9 +123,11 @@ module.exports = {
       accounts: accounts(),
     },
     polygon: {
-      url: "https://rpc-mainnet.maticvigil.com",
+      url: "https://polygon-mainnet.g.alchemy.com/v2/5Og-KACF4PlnrR_uiiy3Mukq7bu3esd_",
       chainId: 137,
       accounts: accounts(),
+      gasPrice: 60e10,
+      gas: 25e6,
     },
     arbitrum: {
       url: `https://arb1.arbitrum.io/rpc`,

@@ -2,7 +2,8 @@
     "mainnet": [
         "bsc",
         "avalanche",
-        "arbitrum"
+        "arbitrum",
+        "polygon"
     ],
     "testnet": [
         "bsc-testnet",

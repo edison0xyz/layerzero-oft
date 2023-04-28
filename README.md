@@ -11,6 +11,13 @@ npx hardhat --network bsc-testnet deploy --tags OFTToken
 npx hardhat --network bsc-testnet deploy --tags ProxyOFT
 npx hardhat --network bsc-testnet deploy --tags Token
 ```
+Verifying
+
+```
+npx hardhat verify <contract_address> --contract contracts/ProxyOFT.sol:ProxyOFT --network polygon [ARGS]
+```
+
+
 
 ## Running the tasks
 
